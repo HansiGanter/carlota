@@ -1,20 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  font-family: "Signika", sans-serif;
 }
 
 h1,
-button {
-  font-family: "Pacifico", cursive;
+h2 {
+  letter-spacing: -2px;
+  font-family: "Open Sans", sans-serif;
 }
 
-button{
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1248px) {
+@media screen and (min-width: 1024px) {
   .container {
-    width: 1248px;
+    width: 1024px;
     margin: auto;
+    padding: 0 20px 0 20px;
+  }
+
+  .media {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "image content";
+    grid-gap: 40px;
+  }
+
+  .img {
+    grid-area: image;
+  }
+
+  .content {
+    grid-area: content;
+    font-size: 2rem;
   }
 }
 .container {
@@ -55,24 +86,25 @@ button{
 
 #website-title {
   font-weight: 100;
-  font-size: 6em;
+  font-size: 6rem;
   line-height: 0;
   color: rgb(252, 212, 244);
+  font-family: "Pacifico", cursive;
 }
 #website-title-carlota {
-  font-size: 1.3em;
+  font-size: 6rem;
   background: linear-gradient(to right, rgb(44, 241, 162), rgb(66, 168, 251));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #first-line {
-  padding-right: 2em;
+  padding-right: 6rem;
   height: fit-content;
   width: fit-content;
 }
 
 #second-line {
-  padding-left: 2em;
+  padding-left: 6rem;
   height: fit-content;
   width: fit-content;
 }
@@ -88,19 +120,21 @@ nav ul {
   list-style: none;
   display: grid;
   padding-left: 0;
+  font-family: "Pacifico", cursive;
 }
 
 .navItem {
-  font-size: xx-large;
+  font-size: 3rem;
   border-radius: 16px;
   color: rgb(237, 194, 228);
   width: 100%;
-  padding-block: 2em;
-  padding-inline: 1em;
+  padding-block: 2rem;
+  padding-inline: 1rem;
   box-shadow: none;
   border: none;
   background: none;
-  margin-inline: 2em;
+  margin-inline: 2rem;
+  font-family: "Pacifico", cursive;
 }
 
 .navItem:hover {
@@ -110,4 +144,10 @@ nav ul {
     rgba(225, 172, 172, 0.5)
   );
   color: white;
+}
+
+.heading-gradient {
+  background: linear-gradient(to right, rgb(44, 241, 162), rgb(66, 168, 251));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

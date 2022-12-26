@@ -1,58 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
+
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Carlota</title>
   </head>
 
   <body>
-    <header
-      class="home-hero"
-      role="banner"
-    >
-      <video
-        autoplay
-        loop
-        muted
-        id="heroVideo"
-      >
-        <source
-          src="assests/hero-video.mp4"
-          type="video/mp4"
-        />
+    <header class="home-hero" role="banner">
+      <video autoplay loop muted id="heroVideo">
+        <source src="assests/hero-video.mp4" type="video/mp4" />
       </video>
       <div class="darkener">
         <nav>
           <ul>
             <li>
-              <button class="navItem">Fotos</button>
+              <button class="navItem"><a href="#heading-1"
+                  style="text-decoration: none;color: inherit;">Main</a></button>
             </li>
             <li>
               <button class="navItem">Videos</button>
             </li>
             <li>
-              <button class="navItem">Freunde</button>
+              <button class="navItem">Fotos</button>
             </li>
             <li>
               <button class="navItem">Familie</button>
@@ -69,8 +49,26 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="container">
+    <main class="container">
+      <h1 id="heading-1" style="max-width: 680px;">Carlota.<br>She is a crazy girl and has a huge <span
+          class="heading-gradient">Huscha</span>.</h1>
+      <div>
+        <div class="media">
+          <div class="img">
+            <img src="assests/carlota-thinking.jpeg" alt="Carlota thinking" style="border-radius: 50%; width: 100%;">
+          </div>
+
+          <div class="content">
+            <h2>Carlota thinking:</h2>
+            <p
+              style="font-family: 'Signika', sans-serif;font-size: 9rem;color: rgb(44, 241, 162); margin: -2rem 0 -8rem 0;">
+              “
+            </p>
+            <p>Bbrrrr. Bbrrrr. Bbrrrr. Piuuuu. Baaaa. Baaaa. Bbrrrr. Bbrrrr.</p>
+            <p style="font-size: 1.3rem;color: rgb(67, 67, 67);">Carlota - 5 Monate</p>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
           consectetur natus maiores perspiciatis neque, illum quo excepturi,
@@ -141,4 +139,5 @@
     </main>
     <footer></footer>
   </body>
+
 </html>
